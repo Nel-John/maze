@@ -56,7 +56,7 @@ public class Admin {
 		
 		
 		JButton btnEdit = new JButton("EDIT");
-		btnEdit.setBounds(1315, 115, 123, 52);
+		btnEdit.setBounds(509, 652, 123, 52);
 		Admin.getContentPane().add(btnEdit);
 		
 		JButton btnUpdate = new JButton("UPDATE");
@@ -64,11 +64,11 @@ public class Admin {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		btnUpdate.setBounds(1315, 180, 123, 52);
+		btnUpdate.setBounds(644, 652, 123, 52);
 		Admin.getContentPane().add(btnUpdate);
 		
 		JButton btnSales = new JButton("SALES");
-		btnSales.setBounds(1315, 245, 123, 52);
+		btnSales.setBounds(779, 652, 123, 52);
 		Admin.getContentPane().add(btnSales);
 		
 		JButton btnAccounts = new JButton("ACCOUNTS");
@@ -78,13 +78,12 @@ public class Admin {
 				pane.setVisible(true);
 			}
 		});
-		btnAccounts.setBounds(1315, 310, 123, 52);
+		btnAccounts.setBounds(914, 652, 123, 52);
 		Admin.getContentPane().add(btnAccounts);
 		
 		JButton btnProceed = new JButton("PROCEED");
-		btnProceed.setBounds(1315, 375, 123, 52);
+		btnProceed.setBounds(1049, 652, 123, 52);
 		Admin.getContentPane().add(btnProceed);
-
 		
 		JLabel lblBG = new JLabel();
 		lblBG.setBounds(0, 0, 1521, 737);
@@ -92,6 +91,8 @@ public class Admin {
 		lblBG.setVisible(true);
 
 		Admin.getContentPane().add(lblBG);
+		
+		
 		
 		
 		
