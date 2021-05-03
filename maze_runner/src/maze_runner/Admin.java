@@ -60,7 +60,7 @@ public class Admin {
 		Admin.getContentPane().add(btnRemove);
 		
 
-		
+		int commit=0;
 		
 		JButton btnInvent = new JButton("INVENT");
 		btnInvent.addActionListener(new ActionListener() {
