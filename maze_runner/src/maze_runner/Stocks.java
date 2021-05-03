@@ -35,6 +35,12 @@ public class Stocks {
 	ArrayList<String> addOnNameArray;
 	ArrayList<String> comboMealNameArray;
 
+	String productName = "Product Name:";
+	String productPrice= "Product Price:";
+	String productStock= "Product Stock:";
+	String productInformation= "Product Information:";
+
+
 	public Stocks() throws IOException {
 		JFrame Stocks = new JFrame();
 		Stocks.setBounds(10,10,1393,781);
@@ -205,7 +211,7 @@ public class Stocks {
 						burgerNameArray=fileArray("maze_runner/ProductIMG/BurgerSteak/BurgerSteakName");
 						burgerSteakArray = fileArray("maze_runner/ProductIMG/BurgerSteak/BurgerSteak.txt");
 						String[] split = burgerSteakArray.get(0).split("\\s");
-						String join = String.join("test \n test", split);
+						String join = String.join("\n", split);
 						String pname = burgerNameArray.get(0);
 						lblName.setText(pname);
 						textArea.setText(join);

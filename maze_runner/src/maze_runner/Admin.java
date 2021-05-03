@@ -46,6 +46,7 @@ public class Admin {
 		List<String> type = new ArrayList<String>();
 		boolean isDone = false;
 
+		
 
 
 
@@ -56,6 +57,10 @@ public class Admin {
 		
 		
 		JButton btnEdit = new JButton("EDIT");
+		btnEdit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		btnEdit.setBounds(509, 652, 123, 52);
 		Admin.getContentPane().add(btnEdit);
 		
