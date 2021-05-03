@@ -6,8 +6,12 @@
           <option name="url" value="https://github.com/Nel-John/maze.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/Nel-John/maze" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="C:\Users\tormis" />
+    <option name="cloneParentDir" value="C:\Users\tormis\IdeaProjects" />
   </component>
 </application>
