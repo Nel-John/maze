@@ -44,11 +44,10 @@ public class Admin {
 		List<String> user = new ArrayList<String>();
 		List<String> password = new ArrayList<String>();
 		List<String> type = new ArrayList<String>();
-		boolean isDone = false;
 
 		
 
-
+			
 
 
 
