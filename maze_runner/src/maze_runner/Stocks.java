@@ -27,6 +27,9 @@ public class Stocks {
 	int selectedLine = 0;
 
 	ArrayList<String> burgerSteakArray;
+	ArrayList<String> burgerArray;
+	ArrayList<String> addOnArray;
+	ArrayList<String> comboMealArray;
 
 	public Stocks() throws IOException {
 		JFrame Stocks = new JFrame();
@@ -48,16 +51,6 @@ public class Stocks {
 			product.close();
 		}
 		String[] product_array = product_list.toArray(new String[]{});
-
-		ArrayList<String> burgerArray = fileArray("ProductIMG/Burger/Burger.txt");
-		ArrayList<String> addOnArray = fileArray("ProductIMG/Add-ON/Add-On.txt");
-
-		ArrayList<String> comboMealArray = fileArray("ProductIMG/Combo Meal/CMeal.txt");
-
-//		BufferedReader burgerFile = new BufferedReader(new FileReader("ProductIMG/Burger/Burger.txt"));
-//		BufferedReader addOnFile = new BufferedReader(new FileReader("ProductIMG/Burger/Add-On.txt"));
-//		BufferedReader burgerSteakFile = new BufferedReader(new FileReader("ProductIMG/Burger/BurgerSteak.txt"));
-//		BufferedReader comboMealFile = new BufferedReader(new FileReader("ProductIMG/Burger/CMeal.txt"));
 
 		JButton btnNewButton = new JButton("New button 2");
 		btnNewButton.setBounds(863, 599, 132, 50);
@@ -185,6 +178,11 @@ public class Stocks {
 				if(BurgerSteak == 1){
 					img.setIcon(new ImageIcon(new ImageIcon("ProductIMG/BurgerSteak/BS1.png").getImage().getScaledInstance(lbl1.getWidth(),lbl1.getHeight(), Image.SCALE_SMOOTH)));
 
+					// Copy Paste mo to pre.
+					// Yung selectedLine base yan sa number ng lbl mo (dito 1 kasi lbl1)
+					// Tapos palitan mo lang yung burgerSteakArray depender sa Category nya, nasa taas yung mga variables na yan
+					// Palitan mo din Path name
+					// Start
 					selectedLine = 1;
 					try {
 						burgerSteakArray = fileArray("ProductIMG/BurgerSteak/BurgerSteak.txt");
@@ -194,9 +192,20 @@ public class Stocks {
 					} catch (IOException ioException) {
 						ioException.printStackTrace();
 					}
+					// End
 				}
 				else if (Burger == 1){
 					img.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Burger/burger1.png").getImage().getScaledInstance(lbl1.getWidth(),lbl1.getHeight(),Image.SCALE_SMOOTH)));
+
+					selectedLine = 1;
+					try {
+						burgerArray = fileArray("ProductIMG/Burger/Burger.txt");
+						String[] split = burgerSteakArray.get(0).split("\\s");
+						String join = String.join("\n", split);
+						textArea.setText(join);
+					} catch (IOException ioException) {
+						ioException.printStackTrace();
+					}
 				}
 				else if(ComboMeal == 1){
 					lbl1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Combo Meal/C1.png").getImage().getScaledInstance(lbl1.getWidth(),lbl1.getHeight(),Image.SCALE_SMOOTH)));
