@@ -96,6 +96,10 @@ public class Admin {
 
 		Admin.getContentPane().add(lblBG);
 		
+		JButton delete = new JButton("DELETEME");
+		delete.setBounds(372, 652, 123, 52);
+		Admin.getContentPane().add(delete);
+		
 		
 		
 		
