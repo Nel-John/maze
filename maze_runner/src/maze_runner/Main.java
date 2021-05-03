@@ -90,10 +90,8 @@ public class Main extends JFrame{
 								break;
 
 							}
-							
 						}
 						else {
-							System.out.println(split[4]);
 							JOptionPane.showMessageDialog(new JFrame(),"ACCOUNT DOES NOT EXIST","ERROR",JOptionPane.ERROR_MESSAGE);
 							break;
 						}
