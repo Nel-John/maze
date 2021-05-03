@@ -58,9 +58,7 @@ public class Admin {
 		btnRemove.setBounds(1029, 652, 123, 52);
 		btnRemove.setVisible(false);
 		Admin.getContentPane().add(btnRemove);
-		
 
-		int commit=0;
 		
 		JButton btnInvent = new JButton("INVENT");
 		btnInvent.addActionListener(new ActionListener() {
