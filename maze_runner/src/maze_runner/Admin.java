@@ -26,7 +26,7 @@ public class Admin {
 
 		JScrollPane pane = new JScrollPane(table);
 		pane.setBounds(313, 57, 895, 582);
-		pane.setVisible(false);
+		pane.setVisible(true);
 		Admin.getContentPane().add(pane);
 
 		Object[]columns = {"USERNAME","PASSWORD","ACCOUNT TYPE"};
@@ -49,57 +49,54 @@ public class Admin {
 
 			
 
-
-
-
+		JButton btnAdd = new JButton("ADD");
+		btnAdd.setBounds(894, 652, 123, 52);
+		btnAdd.setVisible(false);
+		Admin.getContentPane().add(btnAdd);
+		
+		JButton btnRemove = new JButton("REMOVE");
+		btnRemove.setBounds(1029, 652, 123, 52);
+		btnRemove.setVisible(false);
+		Admin.getContentPane().add(btnRemove);
+		
 
 		
 		
-		JButton btnEdit = new JButton("EDIT");
-		btnEdit.addActionListener(new ActionListener() {
+		JButton btnInvent = new JButton("INVENT");
+		btnInvent.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
-		btnEdit.setBounds(509, 652, 123, 52);
-		Admin.getContentPane().add(btnEdit);
-		
-		JButton btnUpdate = new JButton("UPDATE");
-		btnUpdate.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			}
-		});
-		btnUpdate.setBounds(644, 652, 123, 52);
-		Admin.getContentPane().add(btnUpdate);
+		btnInvent.setBounds(178, 251, 123, 52);
+		Admin.getContentPane().add(btnInvent);
 		
 		JButton btnSales = new JButton("SALES");
-		btnSales.setBounds(779, 652, 123, 52);
+		btnSales.setBounds(178, 57, 123, 52);
 		Admin.getContentPane().add(btnSales);
 		
 		JButton btnAccounts = new JButton("ACCOUNTS");
 		btnAccounts.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-
-				pane.setVisible(true);
+				btnAdd.setVisible(true);
+				btnRemove.setVisible(true);
+				
 			}
 		});
-		btnAccounts.setBounds(914, 652, 123, 52);
+		btnAccounts.setBounds(178, 122, 123, 52);
 		Admin.getContentPane().add(btnAccounts);
 		
-		JButton btnProceed = new JButton("PROCEED");
-		btnProceed.setBounds(1049, 652, 123, 52);
-		Admin.getContentPane().add(btnProceed);
 		
+		
+		JButton btnProceed = new JButton("MENU");
+		btnProceed.setBounds(178, 310, 123, 52);
+		Admin.getContentPane().add(btnProceed);
 		JLabel lblBG = new JLabel();
 		lblBG.setBounds(0, 0, 1521, 737);
 		lblBG.setIcon(new ImageIcon(new ImageIcon("BGIMAGE/Admin/AdminBg.png").getImage().getScaledInstance(lblBG.getWidth(),lblBG.getHeight(), Image.SCALE_SMOOTH)));
 		lblBG.setVisible(true);
-
 		Admin.getContentPane().add(lblBG);
 		
-		JButton delete = new JButton("DELETEME");
-		delete.setBounds(372, 652, 123, 52);
-		Admin.getContentPane().add(delete);
-		
+	
 		
 		
 		

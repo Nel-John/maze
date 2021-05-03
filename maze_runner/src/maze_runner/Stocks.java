@@ -209,11 +209,11 @@ public class Stocks {
 					// Start
 					selectedLine = 1;
 					try {
-						burgerNameArray=fileArray("maze_runner/ProductIMG/BurgerSteak/BurgerSteakName");
+						burgerSteakNameArray=fileArray("maze_runner/ProductIMG/BurgerSteak/BurgerSteakName");
 						burgerSteakArray = fileArray("maze_runner/ProductIMG/BurgerSteak/BurgerSteak.txt");
 						String[] split = burgerSteakArray.get(0).split("\\s");
-						String join = String.join("\n", split);
-						String pname = burgerNameArray.get(0);
+						//String join = String.join("\n", split);
+						String pname = burgerSteakNameArray.get(0);
 						lblName.setText(pname);
 						textArea.setText(productName +pname+"\n"+ productPrice +"₱"+split[0]+"\n"+ productStock +split[1]+"\n"+productInformation);
 					} catch (IOException ioException) {
@@ -226,13 +226,17 @@ public class Stocks {
 
 					selectedLine = 1;
 					try {
-						burgerArray = fileArray("maze_runner/ProductIMG/Burger/Burger.txt");
-						String[] split = burgerArray.get(0).split("\\s");
-						String join = String.join("\n", split);
-						textArea.setText(join);
+						burgerNameArray=fileArray("maze_runner/ProductIMG/BurgerSteak/BurgerSteakName");
+						burgerArray = fileArray("maze_runner/ProductIMG/BurgerSteak/BurgerSteak.txt");
+						String[] split = burgerArray.get(4).split("\\s");
+						//String join = String.join("\n", split);
+						String pname = burgerSteakNameArray.get(4);
+						lblName.setText(pname);
+						textArea.setText(productName +pname+"\n"+ productPrice +"₱"+split[0]+"\n"+ productStock +split[1]+"\n"+productInformation);
 					} catch (IOException ioException) {
 						ioException.printStackTrace();
 					}
+
 				}
 				else if(ComboMeal == 1){
 					img.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Combo Meal/C1.png").getImage().getScaledInstance(lbl1.getWidth(),lbl1.getHeight(),Image.SCALE_SMOOTH)));
@@ -280,14 +284,17 @@ public class Stocks {
 					// Start
 					selectedLine = 2;
 					try {
+						burgerSteakNameArray=fileArray("maze_runner/ProductIMG/BurgerSteak/BurgerSteakName");
 						burgerSteakArray = fileArray("maze_runner/ProductIMG/BurgerSteak/BurgerSteak.txt");
 						String[] split = burgerSteakArray.get(1).split("\\s");
-						String join = String.join("\n", split);
-						textArea.setText(join);
+						//String join = String.join("\n", split);
+						String pname = burgerSteakNameArray.get(1);
+						lblName.setText(pname);
+						textArea.setText(productName +pname+"\n"+ productPrice +"₱"+split[0]+"\n"+ productStock +split[1]+"\n"+productInformation);
 					} catch (IOException ioException) {
 						ioException.printStackTrace();
 					}
-					// End
+
 				}
 				else if (Burger == 1){
 					img.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Burger/burger2.png").getImage().getScaledInstance(lbl1.getWidth(),lbl1.getHeight(),Image.SCALE_SMOOTH)));
@@ -349,14 +356,17 @@ public class Stocks {
 					// Start
 					selectedLine = 3;
 					try {
+						burgerSteakNameArray=fileArray("maze_runner/ProductIMG/BurgerSteak/BurgerSteakName");
 						burgerSteakArray = fileArray("maze_runner/ProductIMG/BurgerSteak/BurgerSteak.txt");
 						String[] split = burgerSteakArray.get(2).split("\\s");
-						String join = String.join("\n", split);
-						textArea.setText(join);
+						//String join = String.join("\n", split);
+						String pname = burgerSteakNameArray.get(2);
+						lblName.setText(pname);
+						textArea.setText(productName +pname+"\n"+ productPrice +"₱"+split[0]+"\n"+ productStock +split[1]+"\n"+productInformation);
 					} catch (IOException ioException) {
 						ioException.printStackTrace();
 					}
-					// End
+
 				}
 				else if (Burger == 1){
 					img.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Burger/burger3.png").getImage().getScaledInstance(lbl1.getWidth(),lbl1.getHeight(),Image.SCALE_SMOOTH)));
@@ -417,14 +427,17 @@ public class Stocks {
 					// Start
 					selectedLine = 4;
 					try {
+						burgerSteakNameArray=fileArray("maze_runner/ProductIMG/BurgerSteak/BurgerSteakName");
 						burgerSteakArray = fileArray("maze_runner/ProductIMG/BurgerSteak/BurgerSteak.txt");
 						String[] split = burgerSteakArray.get(3).split("\\s");
-						String join = String.join("\n", split);
-						textArea.setText(join);
+						//String join = String.join("\n", split);
+						String pname = burgerSteakNameArray.get(3);
+						lblName.setText(pname);
+						textArea.setText(productName +pname+"\n"+ productPrice +"₱"+split[0]+"\n"+ productStock +split[1]+"\n"+productInformation);
 					} catch (IOException ioException) {
 						ioException.printStackTrace();
 					}
-					// End
+
 				}
 				else if (Burger == 1){
 					img.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Burger/burger4.png").getImage().getScaledInstance(lbl1.getWidth(),lbl1.getHeight(),Image.SCALE_SMOOTH)));
@@ -485,14 +498,17 @@ public class Stocks {
 					// Start
 					selectedLine = 5;
 					try {
+						burgerSteakNameArray=fileArray("maze_runner/ProductIMG/BurgerSteak/BurgerSteakName");
 						burgerSteakArray = fileArray("maze_runner/ProductIMG/BurgerSteak/BurgerSteak.txt");
 						String[] split = burgerSteakArray.get(4).split("\\s");
-						String join = String.join("\n", split);
-						textArea.setText(join);
+						//String join = String.join("\n", split);
+						String pname = burgerSteakNameArray.get(4);
+						lblName.setText(pname);
+						textArea.setText(productName +pname+"\n"+ productPrice +"₱"+split[0]+"\n"+ productStock +split[1]+"\n"+productInformation);
 					} catch (IOException ioException) {
 						ioException.printStackTrace();
 					}
-					// End
+
 				}
 				else if (Burger == 1){
 					img.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Burger/burger5.png").getImage().getScaledInstance(lbl1.getWidth(),lbl1.getHeight(),Image.SCALE_SMOOTH)));
@@ -553,14 +569,17 @@ public class Stocks {
 					// Start
 					selectedLine = 6;
 					try {
+						burgerSteakNameArray=fileArray("maze_runner/ProductIMG/BurgerSteak/BurgerSteakName");
 						burgerSteakArray = fileArray("maze_runner/ProductIMG/BurgerSteak/BurgerSteak.txt");
 						String[] split = burgerSteakArray.get(5).split("\\s");
-						String join = String.join("\n", split);
-						textArea.setText(join);
+						//String join = String.join("\n", split);
+						String pname = burgerSteakNameArray.get(5);
+						lblName.setText(pname);
+						textArea.setText(productName +pname+"\n"+ productPrice +"₱"+split[0]+"\n"+ productStock +split[1]+"\n"+productInformation);
 					} catch (IOException ioException) {
 						ioException.printStackTrace();
 					}
-					// End
+
 				}
 				else if (Burger == 1){
 					img.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Burger/burger6.png").getImage().getScaledInstance(lbl1.getWidth(),lbl1.getHeight(),Image.SCALE_SMOOTH)));
