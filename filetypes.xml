@@ -1,0 +1,17 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping pattern="Burger_Steak_Value_Meal_2" type="PLAIN_TEXT" />
+      <mapping pattern="Burger_Steak_Value_Meal_1" type="PLAIN_TEXT" />
+      <mapping pattern="2pc_Value_Meal" type="PLAIN_TEXT" />
+      <mapping pattern="Products" type="PLAIN_TEXT" />
+      <mapping pattern="6pc_Burger_Steak" type="PLAIN_TEXT" />
+      <mapping pattern="BurgerSteakInvent" type="PLAIN_TEXT" />
+      <mapping pattern="JollySpaghettiInvent" type="PLAIN_TEXT" />
+      <mapping pattern="YumburgerInvent" type="PLAIN_TEXT" />
+      <mapping pattern="prod_invent" type="PLAIN_TEXT" />
+      <mapping pattern="KaninInvent" type="PLAIN_TEXT" />
+      <mapping pattern="ChickenJoyInvent" type="PLAIN_TEXT" />
+    </extensionMap>
+  </component>
+</application>
