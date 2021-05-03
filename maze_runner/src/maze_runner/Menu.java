@@ -913,7 +913,11 @@ public class Menu {
 		JButton CheckStocks = new JButton("CHECK STOCKS");
 		CheckStocks.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-			
+				try {
+					new Stocks();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
 			}
 		});
 		CheckStocks.setBounds(88, 484, 135, 52);

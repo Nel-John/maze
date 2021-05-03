@@ -3,11 +3,13 @@ package maze_runner;
 import javax.swing.*;
 import javax.swing.event.AncestorListener;
 import javax.swing.event.AncestorEvent;
+import javax.swing.text.BadLocationException;
 import java.awt.*;
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.awt.event.ActionListener;
@@ -21,6 +23,10 @@ public class Stocks {
 	int Burger = 0;
 	int ComboMeal=0;
 	int Addon = 0;
+
+	int selectedLine = 0;
+
+	ArrayList<String> burgerSteakArray;
 
 	public Stocks() throws IOException {
 		JFrame Stocks = new JFrame();
@@ -43,36 +49,45 @@ public class Stocks {
 		}
 		String[] product_array = product_list.toArray(new String[]{});
 
+		ArrayList<String> burgerArray = fileArray("ProductIMG/Burger/Burger.txt");
+		ArrayList<String> addOnArray = fileArray("ProductIMG/Add-ON/Add-On.txt");
 
-		JButton btnNewButton = new JButton("New button");
+		ArrayList<String> comboMealArray = fileArray("ProductIMG/Combo Meal/CMeal.txt");
+
+//		BufferedReader burgerFile = new BufferedReader(new FileReader("ProductIMG/Burger/Burger.txt"));
+//		BufferedReader addOnFile = new BufferedReader(new FileReader("ProductIMG/Burger/Add-On.txt"));
+//		BufferedReader burgerSteakFile = new BufferedReader(new FileReader("ProductIMG/Burger/BurgerSteak.txt"));
+//		BufferedReader comboMealFile = new BufferedReader(new FileReader("ProductIMG/Burger/CMeal.txt"));
+
+		JButton btnNewButton = new JButton("New button 2");
 		btnNewButton.setBounds(863, 599, 132, 50);
 		Stocks.getContentPane().add(btnNewButton);
 		
-		JButton button = new JButton("New button");
-		button.setBounds(1007, 599, 132, 50);
-		Stocks.getContentPane().add(button);
+		JButton updateButton = new JButton("Update");
+		updateButton.setBounds(1007, 599, 132, 50);
+		Stocks.getContentPane().add(updateButton);
 		
-		JButton button_1 = new JButton("New button");
-		button_1.setBounds(1150, 599, 132, 50);
-		Stocks.getContentPane().add(button_1);
+		JButton cancelButton = new JButton("Cancel");
+		cancelButton.setBounds(1150, 599, 132, 50);
+		Stocks.getContentPane().add(cancelButton);
 		
-		JLabel lbl2 = new JLabel("New label");
+		JLabel lbl2 = new JLabel("New label 5");
 		lbl2.setBounds(291, 13, 236, 295);
 		Stocks.getContentPane().add(lbl2);
 		
-		JLabel lbl3 = new JLabel("New label");
+		JLabel lbl3 = new JLabel("New label 6");
 		lbl3.setBounds(581, 13, 236, 295);
 		Stocks.getContentPane().add(lbl3);
 		
-		JLabel lbl4 = new JLabel("New label");
+		JLabel lbl4 = new JLabel("New label 7");
 		lbl4.setBounds(12, 426, 236, 295);
 		Stocks.getContentPane().add(lbl4);
 		
-		JLabel lbl5 = new JLabel("New label");
+		JLabel lbl5 = new JLabel("New label 8");
 		lbl5.setBounds(291, 426, 236, 295);
 		Stocks.getContentPane().add(lbl5);
 		
-		JLabel lbl6 = new JLabel("New label");
+		JLabel lbl6 = new JLabel("New label 9");
 		lbl6.setBounds(581, 426, 236, 295);
 		Stocks.getContentPane().add(lbl6);
 		
@@ -81,7 +96,7 @@ public class Stocks {
 		Stocks.getContentPane().add(panel);
 		panel.setLayout(null);
 		
-		JLabel img = new JLabel("New label");
+		JLabel img = new JLabel("New label 10");
 		img.setBounds(0, 0, 419, 284);
 		panel.add(img);
 		
@@ -89,7 +104,7 @@ public class Stocks {
 		textArea.setBounds(863, 324, 419, 127);
 		Stocks.getContentPane().add(textArea);
 		
-		JLabel lbl1 = new JLabel("New label");
+		JLabel lbl1 = new JLabel("New label 1");
 		
 		lbl1.setBounds(12, 13, 236, 295);
 		Stocks.getContentPane().add(lbl1);
@@ -169,7 +184,17 @@ public class Stocks {
 			public void mouseClicked(MouseEvent e) {
 				if(BurgerSteak == 1){
 					img.setIcon(new ImageIcon(new ImageIcon("ProductIMG/BurgerSteak/BS1.png").getImage().getScaledInstance(lbl1.getWidth(),lbl1.getHeight(), Image.SCALE_SMOOTH)));
-			}
+
+					selectedLine = 1;
+					try {
+						burgerSteakArray = fileArray("ProductIMG/BurgerSteak/BurgerSteak.txt");
+						String[] split = burgerSteakArray.get(0).split("\\s");
+						String join = String.join("\n", split);
+						textArea.setText(join);
+					} catch (IOException ioException) {
+						ioException.printStackTrace();
+					}
+				}
 				else if (Burger == 1){
 					img.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Burger/burger1.png").getImage().getScaledInstance(lbl1.getWidth(),lbl1.getHeight(),Image.SCALE_SMOOTH)));
 				}
@@ -294,7 +319,28 @@ public class Stocks {
 		lblNewLabel.setBounds(0, 0, 1375, 734);
 		Stocks.getContentPane().add(lblNewLabel);
 		
+		cancelButton.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent actionEvent) {
+				System.out.print("Cancel");
+				Stocks.setVisible(false);
+			}
+		});
 
+		updateButton.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent actionEvent) {
+
+				String[] input = textArea.getText().split("\\n");
+				String joined = String.join(" ", input);
+
+				try {
+					writeFile(joined);
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		});
 		
 		
 		
@@ -303,7 +349,47 @@ public class Stocks {
 		
 		Stocks.setVisible(true);
 	}
-	
+
+	public static ArrayList<String> fileArray(String filename) throws IOException {
+		BufferedReader file = new BufferedReader(new FileReader(filename));
+		ArrayList<String> array = new ArrayList<String>();
+		String line;
+
+		while ((line = file.readLine()) != null) {
+			array.add(line);
+		}
+
+		return array;
+	}
+
+	public void writeFile(String content) throws IOException {
+		ArrayList<String> fileContent;
+		Path path = null;
+
+		if (Burger == 1) {
+			path = Paths.get("ProductIMG/Burger/Burger.txt") ;
+		}
+		if (Addon == 1) {
+			path = Paths.get("ProductIMG/Add-ON/Add-On.txt");
+		}
+		if (BurgerSteak == 1) {
+			path = Paths.get("ProductIMG/BurgerSteak/BurgerSteak.txt");
+		}
+		if (ComboMeal == 1) {
+			path = Paths.get("ProductIMG/Combo Meal/CMeal.txt");
+		}
+
+		fileContent = new ArrayList<String>(Files.readAllLines(path));
+
+		for (int i = 0; i < fileContent.size();i++) {
+			if (i == selectedLine - 1) {
+				fileContent.set(i, content);
+			}
+		}
+
+		Files.write(path, fileContent, StandardCharsets.UTF_8);
+		System.out.print(fileContent);
+	}
 
 	public static void main(String[] args) throws IOException {
 		new Stocks();
