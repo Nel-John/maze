@@ -1,0 +1,2 @@
+counter password Cashier
+admin123 password123 Admin
