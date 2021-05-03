@@ -10,9 +10,12 @@
       <mapping pattern="JollySpaghettiInvent" type="PLAIN_TEXT" />
       <mapping pattern="YumburgerInvent" type="PLAIN_TEXT" />
       <mapping pattern="prod_invent" type="PLAIN_TEXT" />
+      <mapping pattern="AddOnName" type="PLAIN_TEXT" />
       <mapping pattern="KaninInvent" type="PLAIN_TEXT" />
       <mapping pattern="ChickenJoyInvent" type="PLAIN_TEXT" />
+      <mapping pattern="CMealName" type="PLAIN_TEXT" />
       <mapping pattern="ProductName" type="PLAIN_TEXT" />
+      <mapping pattern="BurgerName" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
