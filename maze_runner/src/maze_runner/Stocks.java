@@ -113,7 +113,8 @@ public class Stocks {
 		panel.add(lblName);
 
 		JTextArea textArea = new JTextArea();
-		textArea.setFont(new Font("MS PGothic", Font.PLAIN, 25));
+		textArea.setForeground(new Color(255, 255, 255));
+		textArea.setFont(new Font("Monospaced", Font.PLAIN, 20));
 		textArea.setEditable(false);
 		textArea.setBackground(new Color(139, 0, 0));
 		textArea.setBounds(863, 324, 419, 127);
@@ -214,7 +215,7 @@ public class Stocks {
 						String join = String.join("\n", split);
 						String pname = burgerNameArray.get(0);
 						lblName.setText(pname);
-						textArea.setText(join);
+						textArea.setText(productName +pname+"\n"+ productPrice +"₱"+split[0]+"\n"+ productStock +split[1]+"\n"+productInformation);
 					} catch (IOException ioException) {
 						ioException.printStackTrace();
 					}
