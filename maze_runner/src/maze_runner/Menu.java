@@ -127,7 +127,7 @@ public class Menu {
 		menu.setBounds(10,10,1543,836);
 		menu.getContentPane().setLayout(null);
 
-        BufferedReader product = new BufferedReader(new FileReader("maze_runner/ProductIMG/Products"));
+        BufferedReader product = new BufferedReader(new FileReader("ProductIMG/Products"));
         List<String> product_list = new ArrayList<String>();
         try {
             String line = null;
@@ -411,12 +411,12 @@ public class Menu {
 				lblOne.setForeground(new Color(255, 255, 255));
 				lblOne.setHorizontalAlignment(SwingConstants.CENTER);
 
-				lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/BurgerSteak/BS1.png").getImage().getScaledInstance(lblProduct1.getWidth(),lblProduct1.getHeight(),Image.SCALE_SMOOTH)));
-				lblProduct2.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/BurgerSteak/BS2.png").getImage().getScaledInstance(lblProduct2.getWidth(),lblProduct2.getHeight(),Image.SCALE_SMOOTH)));
-				lblProduct3.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/BurgerSteak/BS3.png").getImage().getScaledInstance(lblProduct3.getWidth(),lblProduct3.getHeight(),Image.SCALE_SMOOTH)));
-				lblProduct4.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/BurgerSteak/BS4.png").getImage().getScaledInstance(lblProduct4.getWidth(),lblProduct4.getHeight(),Image.SCALE_SMOOTH)));
-				lblProduct5.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/BurgerSteak/BS5.png").getImage().getScaledInstance(lblProduct5.getWidth(),lblProduct5.getHeight(),Image.SCALE_SMOOTH)));
-				lblProduct6.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/BurgerSteak/BS6.png").getImage().getScaledInstance(lblProduct6.getWidth(),lblProduct6.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/BurgerSteak/BS1.png").getImage().getScaledInstance(lblProduct1.getWidth(),lblProduct1.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct2.setIcon(new ImageIcon(new ImageIcon("ProductIMG/BurgerSteak/BS2.png").getImage().getScaledInstance(lblProduct2.getWidth(),lblProduct2.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct3.setIcon(new ImageIcon(new ImageIcon("ProductIMG/BurgerSteak/BS3.png").getImage().getScaledInstance(lblProduct3.getWidth(),lblProduct3.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct4.setIcon(new ImageIcon(new ImageIcon("ProductIMG/BurgerSteak/BS4.png").getImage().getScaledInstance(lblProduct4.getWidth(),lblProduct4.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct5.setIcon(new ImageIcon(new ImageIcon("ProductIMG/BurgerSteak/BS5.png").getImage().getScaledInstance(lblProduct5.getWidth(),lblProduct5.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct6.setIcon(new ImageIcon(new ImageIcon("ProductIMG/BurgerSteak/BS6.png").getImage().getScaledInstance(lblProduct6.getWidth(),lblProduct6.getHeight(),Image.SCALE_SMOOTH)));
 
 				lblProduct1.setVisible(true);
 				lblProduct2.setVisible(true);
@@ -471,12 +471,12 @@ public class Menu {
 				lblTwo.setForeground(new Color(255, 255, 255));
 				lblTwo.setHorizontalAlignment(SwingConstants.CENTER);
 
-				lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Burger/burger1.png").getImage().getScaledInstance(lblProduct1.getWidth(),lblProduct1.getHeight(),Image.SCALE_SMOOTH)));
-				lblProduct2.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Burger/burger2.png").getImage().getScaledInstance(lblProduct2.getWidth(),lblProduct2.getHeight(),Image.SCALE_SMOOTH)));
-				lblProduct3.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Burger/burger3.png").getImage().getScaledInstance(lblProduct3.getWidth(),lblProduct3.getHeight(),Image.SCALE_SMOOTH)));
-				lblProduct4.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Burger/burger4.png").getImage().getScaledInstance(lblProduct4.getWidth(),lblProduct4.getHeight(),Image.SCALE_SMOOTH)));
-				lblProduct5.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Burger/burger5.png").getImage().getScaledInstance(lblProduct5.getWidth(),lblProduct5.getHeight(),Image.SCALE_SMOOTH)));
-				lblProduct6.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Burger/burger6.png").getImage().getScaledInstance(lblProduct6.getWidth(),lblProduct6.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Burger/burger1.png").getImage().getScaledInstance(lblProduct1.getWidth(),lblProduct1.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct2.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Burger/burger2.png").getImage().getScaledInstance(lblProduct2.getWidth(),lblProduct2.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct3.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Burger/burger3.png").getImage().getScaledInstance(lblProduct3.getWidth(),lblProduct3.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct4.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Burger/burger4.png").getImage().getScaledInstance(lblProduct4.getWidth(),lblProduct4.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct5.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Burger/burger5.png").getImage().getScaledInstance(lblProduct5.getWidth(),lblProduct5.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct6.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Burger/burger6.png").getImage().getScaledInstance(lblProduct6.getWidth(),lblProduct6.getHeight(),Image.SCALE_SMOOTH)));
 
 				lblProduct1.setVisible(true);
 				lblProduct2.setVisible(true);
@@ -532,12 +532,12 @@ public class Menu {
 				lblThree.setForeground(new Color(255, 255, 255));
 				lblThree.setHorizontalAlignment(SwingConstants.CENTER);
 
-				lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Combo Meal/C1.png").getImage().getScaledInstance(lblProduct1.getWidth(),lblProduct1.getHeight(),Image.SCALE_SMOOTH)));
-				lblProduct2.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Combo Meal/C2.png").getImage().getScaledInstance(lblProduct2.getWidth(),lblProduct2.getHeight(),Image.SCALE_SMOOTH)));
-				lblProduct3.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Combo Meal/C3.png").getImage().getScaledInstance(lblProduct3.getWidth(),lblProduct3.getHeight(),Image.SCALE_SMOOTH)));
-				lblProduct4.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Combo Meal/C4.png").getImage().getScaledInstance(lblProduct4.getWidth(),lblProduct4.getHeight(),Image.SCALE_SMOOTH)));
-				lblProduct5.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Combo Meal/C5.png").getImage().getScaledInstance(lblProduct5.getWidth(),lblProduct5.getHeight(),Image.SCALE_SMOOTH)));
-				lblProduct6.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Combo Meal/C6.png").getImage().getScaledInstance(lblProduct6.getWidth(),lblProduct6.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Combo Meal/C1.png").getImage().getScaledInstance(lblProduct1.getWidth(),lblProduct1.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct2.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Combo Meal/C2.png").getImage().getScaledInstance(lblProduct2.getWidth(),lblProduct2.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct3.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Combo Meal/C3.png").getImage().getScaledInstance(lblProduct3.getWidth(),lblProduct3.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct4.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Combo Meal/C4.png").getImage().getScaledInstance(lblProduct4.getWidth(),lblProduct4.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct5.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Combo Meal/C5.png").getImage().getScaledInstance(lblProduct5.getWidth(),lblProduct5.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct6.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Combo Meal/C6.png").getImage().getScaledInstance(lblProduct6.getWidth(),lblProduct6.getHeight(),Image.SCALE_SMOOTH)));
 
 				lblProduct1.setVisible(true);
 				lblProduct2.setVisible(true);
@@ -597,12 +597,12 @@ public class Menu {
 				lblFour.setForeground(new Color(255, 255, 255));
 				lblFour.setHorizontalAlignment(SwingConstants.CENTER);
 
-				lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Add-On/A1.png").getImage().getScaledInstance(lblProduct1.getWidth(),lblProduct1.getHeight(),Image.SCALE_SMOOTH)));
-				lblProduct2.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Add-On/A2.png").getImage().getScaledInstance(lblProduct2.getWidth(),lblProduct2.getHeight(),Image.SCALE_SMOOTH)));
-				lblProduct3.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Add-On/A3.png").getImage().getScaledInstance(lblProduct3.getWidth(),lblProduct3.getHeight(),Image.SCALE_SMOOTH)));
-				lblProduct4.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Add-On/A4.png").getImage().getScaledInstance(lblProduct4.getWidth(),lblProduct4.getHeight(),Image.SCALE_SMOOTH)));
-				lblProduct5.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Add-On/A5.png").getImage().getScaledInstance(lblProduct5.getWidth(),lblProduct5.getHeight(),Image.SCALE_SMOOTH)));
-				lblProduct6.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Add-On/A6.png").getImage().getScaledInstance(lblProduct6.getWidth(),lblProduct6.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Add-On/A1.png").getImage().getScaledInstance(lblProduct1.getWidth(),lblProduct1.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct2.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Add-On/A2.png").getImage().getScaledInstance(lblProduct2.getWidth(),lblProduct2.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct3.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Add-On/A3.png").getImage().getScaledInstance(lblProduct3.getWidth(),lblProduct3.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct4.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Add-On/A4.png").getImage().getScaledInstance(lblProduct4.getWidth(),lblProduct4.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct5.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Add-On/A5.png").getImage().getScaledInstance(lblProduct5.getWidth(),lblProduct5.getHeight(),Image.SCALE_SMOOTH)));
+				lblProduct6.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Add-On/A6.png").getImage().getScaledInstance(lblProduct6.getWidth(),lblProduct6.getHeight(),Image.SCALE_SMOOTH)));
 
 				lblProduct1.setVisible(true);
 				lblProduct2.setVisible(true);
@@ -651,28 +651,28 @@ public class Menu {
 		List<Float> ComboList = new ArrayList<Float>();
 		List<Float> AddList = new ArrayList<Float>();
 
-		BufferedReader br = new BufferedReader(new FileReader("maze_runner/ProductIMG/BurgerSteak/BurgerSteak.txt"));
+		BufferedReader br = new BufferedReader(new FileReader("ProductIMG/BurgerSteak/BurgerSteak.txt"));
 		while ((checker = br.readLine()) != null) {
 			String[] split = checker.split("\\s");
 			BurgerSteakList.add(Float.parseFloat(split[0]));
 		}
 		System.out.println(BurgerSteakList);
 
-		BufferedReader b = new BufferedReader(new FileReader("maze_runner/ProductIMG/Burger/Burger.txt"));
+		BufferedReader b = new BufferedReader(new FileReader("ProductIMG/Burger/Burger.txt"));
 		while ((checker = b.readLine()) != null) {
 			String[] split = checker.split("\\s");
 			BurgerList.add(Float.parseFloat(split[0]));
 		}
 		System.out.println(BurgerList);
 
-		BufferedReader cm= new BufferedReader(new FileReader("maze_runner/ProductIMG/Combo Meal/CMeal.txt"));
+		BufferedReader cm= new BufferedReader(new FileReader("ProductIMG/Combo Meal/CMeal.txt"));
 		while ((checker = cm.readLine()) != null) {
 			String[] split = checker.split("\\s");
 			ComboList.add(Float.parseFloat(split[0]));
 		}
 		System.out.println(ComboList);
 
-		BufferedReader addon= new BufferedReader(new FileReader("maze_runner/ProductIMG/Add-On/Add-On.txt"));
+		BufferedReader addon= new BufferedReader(new FileReader("ProductIMG/Add-On/Add-On.txt"));
 		while ((checker = addon.readLine()) != null) {
 			String[] split = checker.split("\\s");
 			AddList.add(Float.parseFloat(split[0]));
@@ -946,7 +946,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/BurgerSteak/BS1.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/BurgerSteak/BS1.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(BurgerSteak[0]);
 
 						try {
@@ -970,7 +970,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/BurgerSteak/BS2.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/BurgerSteak/BS2.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(BurgerSteak[1]);
 
 						try {
@@ -993,7 +993,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/BurgerSteak/BS3.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/BurgerSteak/BS3.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(BurgerSteak[2]);
 
 						try {
@@ -1016,7 +1016,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/BurgerSteak/BS4.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/BurgerSteak/BS4.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(BurgerSteak[3]);
 
 						try {
@@ -1040,7 +1040,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/BurgerSteak/BS5.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/BurgerSteak/BS5.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(BurgerSteak[4]);
 
 						try {
@@ -1063,7 +1063,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/BurgerSteak/BS6.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/BurgerSteak/BS6.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(BurgerSteak[5]);
 
 						try {
@@ -1090,7 +1090,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Burger/burger1.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Burger/burger1.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(Burger[0]);
 
 						try {
@@ -1114,7 +1114,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Burger/burger2.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Burger/burger2.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(Burger[1]);
 
 						try {
@@ -1137,7 +1137,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Burger/burger3.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Burger/burger3.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(Burger[2]);
 
 						try {
@@ -1160,7 +1160,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Burger/burger4.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Burger/burger4.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(Burger[3]);
 
 						try {
@@ -1184,7 +1184,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Burger/burger5.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Burger/burger5.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(Burger[4]);
 
 						try {
@@ -1207,7 +1207,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Burger/burger6.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Burger/burger6.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(Burger[5]);
 
 						try {
@@ -1233,7 +1233,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Combo Meal/C1.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Combo Meal/C1.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(CMeal[0]);
 
 						try {
@@ -1257,7 +1257,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Combo Meal/C2.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Combo Meal/C2.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(CMeal[1]);
 
 						try {
@@ -1280,7 +1280,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Combo Meal/C3.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Combo Meal/C3.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(CMeal[2]);
 
 						try {
@@ -1303,7 +1303,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Combo Meal/C4.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Combo Meal/C4.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(CMeal[3]);
 
 						try {
@@ -1327,7 +1327,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Combo Meal/C5.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Combo Meal/C5.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(CMeal[4]);
 
 						try {
@@ -1350,7 +1350,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Combo Meal/C6.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Combo Meal/C6.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(CMeal[5]);
 
 						try {
@@ -1375,7 +1375,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Add-On/A1.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Add-On/A1.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(Addon[0]);
 
 						try {
@@ -1399,7 +1399,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Add-On/A2.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Add-On/A2.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(Addon[1]);
 
 						try {
@@ -1422,7 +1422,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Add-On/A3.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Add-On/A3.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(Addon[2]);
 
 						try {
@@ -1445,7 +1445,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Add-On/A4.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Add-On/A4.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(Addon[3]);
 
 						try {
@@ -1469,7 +1469,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Add-On/A5.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Add-On/A5.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(Addon[4]);
 
 						try {
@@ -1492,7 +1492,7 @@ public class Menu {
 						txtrProduct5.setVisible(false);
 						txtrProduct6.setVisible(false);
 
-						lblProduct1.setIcon(new ImageIcon(new ImageIcon("maze_runner/ProductIMG/Add-On/A6.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
+						lblProduct1.setIcon(new ImageIcon(new ImageIcon("ProductIMG/Add-On/A6.png").getImage().getScaledInstance(lblProduct1.getWidth(), lblProduct1.getHeight(), Image.SCALE_SMOOTH)));
 						txtrProduct1.setText(Addon[5]);
 
 						try {
@@ -1529,12 +1529,12 @@ public class Menu {
 			
 		JLabel lblMenu = new JLabel();
 		lblMenu.setBounds(1180, 36, 333, 551);
-		lblMenu.setIcon(new ImageIcon(new ImageIcon("maze_runner/BGIMAGE/Menu/Menu1.png").getImage().getScaledInstance(lblMenu.getWidth(),lblMenu.getHeight(),Image.SCALE_SMOOTH)));
+		lblMenu.setIcon(new ImageIcon(new ImageIcon("BGIMAGE/Menu/Menu1.png").getImage().getScaledInstance(lblMenu.getWidth(),lblMenu.getHeight(),Image.SCALE_SMOOTH)));
 		menu.getContentPane().add(lblMenu);
 		
 		JLabel lblTotal = new JLabel();
 		lblTotal.setBounds(1180, 600, 333, 55);
-		lblTotal.setIcon(new ImageIcon(new ImageIcon("maze_runner/BGIMAGE/Menu/Total1.png").getImage().getScaledInstance(lblTotal.getWidth(),lblTotal.getHeight(),Image.SCALE_SMOOTH)));
+		lblTotal.setIcon(new ImageIcon(new ImageIcon("BGIMAGE/Menu/Total1.png").getImage().getScaledInstance(lblTotal.getWidth(),lblTotal.getHeight(),Image.SCALE_SMOOTH)));
 		menu.getContentPane().add(lblTotal);
 		
 		JLabel lblCheckout = new JLabel();
@@ -1567,12 +1567,12 @@ public class Menu {
 			}
 		});
 		lblCheckout.setBounds(1180, 676, 333, 78);
-		lblCheckout.setIcon(new ImageIcon(new ImageIcon("maze_runner/BGIMAGE/Menu/Checkout1.png").getImage().getScaledInstance(lblCheckout.getWidth(),lblCheckout.getHeight(),Image.SCALE_SMOOTH)));
+		lblCheckout.setIcon(new ImageIcon(new ImageIcon("BGIMAGE/Menu/Checkout1.png").getImage().getScaledInstance(lblCheckout.getWidth(),lblCheckout.getHeight(),Image.SCALE_SMOOTH)));
 		menu.getContentPane().add(lblCheckout);
 		
 		JLabel lblCompany = new JLabel();
 		lblCompany.setBounds(12, 333, 266, 120);
-		lblCompany.setIcon(new ImageIcon(new ImageIcon("maze_runner/BGIMAGE/Menu/Company1.png").getImage().getScaledInstance(lblCompany.getWidth(),lblCompany.getHeight(),Image.SCALE_SMOOTH)));
+		lblCompany.setIcon(new ImageIcon(new ImageIcon("BGIMAGE/Menu/Company1.png").getImage().getScaledInstance(lblCompany.getWidth(),lblCompany.getHeight(),Image.SCALE_SMOOTH)));
 		menu.getContentPane().add(lblCompany);
 		
 		JLabel lblBG = new JLabel("");
@@ -1584,7 +1584,6 @@ public class Menu {
 		
 
 		menu.setVisible(true);
-		
 	}
 
 
